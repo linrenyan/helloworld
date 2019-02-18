@@ -1,0 +1,24 @@
+<!--pages/list/list.wxml-->
+<!-- <view class='container list' >
+<navigator url='../item/item?id={{ item.id }}' wx:for="{{movies}}" wx:key="id">
+  <view class='item'>
+    <image src="{{item.images.large}}" mode='aspectFill'/>
+    <view class='meta'>
+      <text class='title'>{{item.title}}</text>
+      <text class='sub-title'>{{item.original_title}} ({{item.year}})</text>
+      <text class='artists'>导演：<block wx:for="{{ item.directors }}" wx:key="id"> {{ item.name }} </block></text>
+    </view>
+    <view class="rating">
+      <text>{{item.rating.average}}</text>
+    </view>
+  </view>
+  </navigator>
+</view> -->
+<import src="../common/movie-list"/>
+<view class="container">
+  <!-- <view class="header">
+    <text>{{ subtitle }}</text>
+  </view> -->
+  <template is="movie-list" data="{{ movies, loading, hasMore }}"/>
+</view>
+

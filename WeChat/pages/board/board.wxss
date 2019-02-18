@@ -1,0 +1,29 @@
+.slide swiper{
+  height: 400rpx;
+}
+.slide swiper image{
+  width: 100%;
+  height: 100%;
+}
+.board{
+  display: flex;
+  flex-direction: column;
+  padding: 10rpx;
+}
+.board-item{
+  display: flex;
+  border: 1px solid #eee;
+  border-radius: 2px;
+  margin: 10rpx 0;
+  padding: 40rpx;
+  cursor: pointer;
+}
+.board .board-item text{
+  flex: 1;
+  font-size: 14px;
+  color: #666;
+}
+.board .board-item image{
+  width: 40rpx;
+  height: 40rpx;
+}

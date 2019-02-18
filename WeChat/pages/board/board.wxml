@@ -1,0 +1,19 @@
+<view class="container">
+  <view class='slide'>
+    <swiper indicator-dots='true' autoplay='true' interval="5000" duration='1000' catchtap="onItemClick">
+      <swiper-item wx:for="{{list}}" wx:key="id">
+        <image src="{{item.images.large}}" mode='aspectFill' data-postId="{{item.id}}"/>
+      </swiper-item>
+    </swiper>
+  </view>
+  <view class='board'>
+    <navigator url="../list/list?type={{item.key}}&title={{item.title}}" wx:for="{{board}}" wx:key="id">
+      <view class="board-item" >
+        <text class='title'>{{item.title}}</text>
+        <image src="../../images/arrowright.png" mode='aspectFill'/>
+      </view>
+    </navigator>
+    
+    
+  </view>
+</view>
