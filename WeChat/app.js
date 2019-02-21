@@ -16,7 +16,7 @@ const douban = require('./utils/douban.js')
  * Baidu API 模块
  * @type {Object}
  */
-const baidu = require('./utils/baidu.js')
+
 
 App({
   /**
@@ -42,27 +42,14 @@ App({
   /**
    * Baidu API
    */
-  baidu: baidu,
+  
 
   /**
    * 生命周期函数--监听小程序初始化
    * 当小程序初始化完成时，会触发 onLaunch（全局只触发一次）
    */
   onLaunch() {
-    // wechat
-    //   .getLocation()
-    //   .then(res => {
-    //     const { latitude, longitude } = res
-    //     return baidu.getCityName(latitude, longitude)
-    //   })
-    //   .then(name => {
-    //     this.data.currentCity = name.replace('市', '')
-    //     console.log(`currentCity : ${this.data.currentCity}`)
-    //   })
-    //   .catch(err => {
-    //     this.data.currentCity = '珠海'
-    //     console.error(err)
-    //   })
+    
   },
   
 })
