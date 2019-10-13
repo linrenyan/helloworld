@@ -109,6 +109,7 @@ Page({
    */
   onReachBottom: function () {
     this.loadMore()
+    console.log("下拉")
   },
 
   /**
